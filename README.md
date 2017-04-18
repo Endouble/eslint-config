@@ -16,7 +16,7 @@ yarn add --dev eslint eslint-config-airbnb-base eslint-plugin-import babel-eslin
 ```
 
 #### 2. Using
-Create an `.eslint.json` file at the root of your project and add the following configuration:
+Create an `.eslintrc.json` file at the root of your project and add the following configuration:
 
 ```json
 {
@@ -41,7 +41,7 @@ yarn add --dev eslint eslint-config-airbnb-base eslint-plugin-import @endouble.c
 ```
 
 #### 2. Using
-Create an `.eslint.json` file at the root of your project and add the following configuration:
+Create an `.eslintrc.json` file at the root of your project and add the following configuration:
 
 ```json
 {
