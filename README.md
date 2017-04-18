@@ -70,3 +70,6 @@ yarn test
 
 ## Maintainers
 [Renan Couto](https://github.com/renancouto)
+
+## License
+MIT
