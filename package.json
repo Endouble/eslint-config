@@ -8,7 +8,7 @@
     "type": "git"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "eslint *.js test/*.js && mocha"
   },
   "author": "Renan Couto <renancouto@gmail.com>",
   "license": "MIT",
