@@ -1,6 +1,6 @@
 {
   "name": "@endouble.com/eslint-config-endouble",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "description": "Endouble's Javascript ESLint configuration",
   "main": "./config/index.js",
   "repository": {
