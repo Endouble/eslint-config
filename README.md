@@ -10,9 +10,9 @@
 Make sure you have Node (>=6) installed
 
 ```bash
-npm install eslint eslint-config-airbnb-base eslint-plugin-import babel-eslint babel-preset-es2015 @endouble.com/eslint-config-endouble --save-dev
+npm install eslint eslint-plugin-import babel-eslint babel-preset-es2015 @endouble.com/eslint-config-endouble --save-dev
 # or
-yarn add --dev eslint eslint-config-airbnb-base eslint-plugin-import babel-eslint babel-preset-es2015 @endouble.com/eslint-config-endouble
+yarn add --dev eslint eslint-plugin-import babel-eslint babel-preset-es2015 @endouble.com/eslint-config-endouble
 ```
 
 #### 2. Using
@@ -35,9 +35,9 @@ Create an `.eslintrc.json` file at the root of your project and add the followin
 Make sure you have Node (>=6) installed
 
 ```bash
-npm install eslint eslint-config-airbnb-base eslint-plugin-import @endouble.com/eslint-config-endouble --save-dev
+npm install eslint eslint-plugin-import @endouble.com/eslint-config-endouble --save-dev
 # or
-yarn add --dev eslint eslint-config-airbnb-base eslint-plugin-import @endouble.com/eslint-config-endouble
+yarn add --dev eslint eslint-plugin-import @endouble.com/eslint-config-endouble
 ```
 
 #### 2. Using
