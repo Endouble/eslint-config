@@ -2,7 +2,7 @@
  * dependencies
  */
 const assert = require('assert');
-const config = require('../');
+const config = require('../config');
 
 /**
  * isObject
