@@ -49,6 +49,17 @@ Create an `.eslintrc.json` file at the root of your project and add the followin
 }
 ```
 
+##### Extra configuration
+Add to `package.json` a script to lint your desired files:
+
+```json
+{
+    "scripts": {
+        "lint": "eslint js/*.js"
+    }
+}
+```
+
 ## Rules
 Please refer to [AirBnB's Styleguide](https://github.com/airbnb/javascript) for more information about the linter's
 rules.
