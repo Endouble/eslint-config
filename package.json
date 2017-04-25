@@ -4,7 +4,7 @@
   "description": "Endouble's Javascript ESLint configuration",
   "main": "index.js",
   "repository": {
-    "url": "https://github.com/Endouble/eslint",
+    "url": "https://github.com/Endouble/eslint-config",
     "type": "git"
   },
   "scripts": {
