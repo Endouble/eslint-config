@@ -2,7 +2,7 @@
   "name": "@endouble.com/eslint-config-endouble",
   "version": "0.5.0",
   "description": "Endouble's Javascript ESLint configuration",
-  "main": "index.js",
+  "main": "./config/index.js",
   "repository": {
     "url": "https://github.com/Endouble/eslint-config",
     "type": "git"
