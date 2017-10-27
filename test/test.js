@@ -1,42 +1,27 @@
-/**
- * dependencies
- */
-const assert = require('assert');
-const config = require('../.');
+const defaults = require('../.');
 const react = require('../react');
 
-/**
- * isObject
- * @param  {object}  obj target object
- * @return {Boolean}     is object or not
- */
-function isObject(obj) {
-    return typeof obj === 'object' && obj !== null;
-}
-
-/**
- * tests
- */
 describe('test basic properties of all configurations', () => {
+    it('should match the snapshot', () => {
+        expect(defaults).toMatchSnapshot();
+        expect(react).toMatchSnapshot();
+    });
+
     it('should be an object', () => {
-        assert(isObject(config));
-        assert(isObject(react));
+        expect(defaults).toBeInstanceOf(Object);
+        expect(react).toBeInstanceOf(Object);
     });
 
     it('should have the "rules" property', () => {
-        assert(config.rules);
-        assert(isObject(config.rules));
-        assert(react.rules);
-        assert(isObject(react.rules));
+        expect(defaults.rules).toBeTruthy();
+        expect(react.rules).toBeTruthy();
     });
 
     it('should extend "airbnb-base"', () => {
-        assert(config.extends);
-        assert(config.extends, 'airbnb-base');
+        expect(defaults.extends).toBe('airbnb-base');
     });
 
     it('should extend "airbnb"', () => {
-        assert(react.extends);
-        assert(react.extends, 'airbnb');
+        expect(react.extends).toBe('airbnb');
     });
 });
