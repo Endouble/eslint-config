@@ -21,7 +21,7 @@ describe('test basic properties of all configurations', () => {
         expect(defaults.extends).toBe('airbnb-base');
     });
 
-    it('should extend "airbnb"', () => {
-        expect(react.extends).toBe('airbnb');
+    it('should extend "airbnb" and defaults', () => {
+        expect(react.extends).toEqual(['airbnb', '@endouble.com/eslint-config-endouble']);
     });
 });

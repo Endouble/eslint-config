@@ -29,7 +29,10 @@ Object {
 
 exports[`test basic properties of all configurations should match the snapshot 2`] = `
 Object {
-  "extends": "airbnb",
+  "extends": Array [
+    "airbnb",
+    "@endouble.com/eslint-config-endouble",
+  ],
   "plugins": Array [
     "react",
   ],
@@ -47,13 +50,6 @@ Object {
         "commonjs": true,
       },
     ],
-    "indent": Array [
-      "error",
-      4,
-      Object {
-        "SwitchCase": 1,
-      },
-    ],
     "jsx-a11y/anchor-is-valid": Array [
       "error",
       Object {
@@ -67,18 +63,6 @@ Object {
       "error",
       Object {
         "allowChildren": true,
-      },
-    ],
-    "max-len": Array [
-      "error",
-      120,
-      2,
-      Object {
-        "ignoreComments": false,
-        "ignoreRegExpLiterals": true,
-        "ignoreStrings": true,
-        "ignoreTemplateLiterals": true,
-        "ignoreUrls": true,
       },
     ],
     "react/jsx-filename-extension": "off",
