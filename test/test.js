@@ -1,33 +1,31 @@
-/**
- * dependencies
- */
-const assert = require('assert');
-const config = require('../config');
+const defaults = require('../.');
+const react = require('../react');
 
-/**
- * isObject
- * @param  {object}  obj target object
- * @return {Boolean}     is object or not
- */
-function isObject(obj) {
-    return typeof obj === 'object' && obj !== null;
-}
+describe('test basic properties of all configurations', () => {
+    it('should match the snapshot', () => {
+        expect(defaults).toMatchSnapshot();
+        expect(react).toMatchSnapshot();
+    });
 
-/**
- * tests
- */
-describe('test basic properties of config', () => {
     it('should be an object', () => {
-        assert(isObject(config));
+        expect(defaults).toBeInstanceOf(Object);
+        expect(react).toBeInstanceOf(Object);
     });
 
     it('should have the "rules" property', () => {
-        assert(config.rules);
-        assert(isObject(config.rules));
+        expect(defaults.rules).toBeTruthy();
+        expect(react.rules).toBeTruthy();
     });
 
     it('should extend "airbnb-base"', () => {
-        assert(config.extends);
-        assert(config.extends, 'airbnb-base');
+        expect(defaults.extends).toBe('airbnb-base');
+    });
+
+    it('should extend "airbnb" and defaults', () => {
+        expect(react.extends).toEqual(['airbnb', '@endouble.com/eslint-config-endouble']);
+    });
+
+    it('should have "react" as a plugin', () => {
+        expect(react.plugins).toContain('react');
     });
 });
