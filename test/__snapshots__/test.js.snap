@@ -38,13 +38,13 @@ Object {
   ],
   "rules": Object {
     "import/no-extraneous-dependencies": Array [
-      2,
+      "error",
       Object {
         "devDependencies": true,
       },
     ],
     "import/no-unresolved": Array [
-      2,
+      "error",
       Object {
         "amd": true,
         "commonjs": true,

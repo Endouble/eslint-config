@@ -1,55 +1,37 @@
-# eslint
+# eslint-config-endouble
 > Endouble's Javascript ESLint configuration, based on [AirBnB's](https://github.com/airbnb/javascript)
 
 ## Install and Usage
 
-### Complete setup
-> For transpiled Javascript (using Babel) that runs on a browser
-
-#### 1. Installing
+### 1. Installing
 Make sure you have Node (>=6) installed
 
 ```bash
-npm install eslint eslint-plugin-import babel-eslint babel-preset-es2015 @endouble.com/eslint-config-endouble --save-dev
-# or
-yarn add --dev eslint eslint-plugin-import babel-eslint babel-preset-es2015 @endouble.com/eslint-config-endouble
+yarn add --dev @endouble.com/eslint-config-endouble
 ```
 
-#### 2. Using
+### 2. Using
 Create an `.eslintrc.json` file at the root of your project and add the following configuration:
 
-```json
-{
-    "parser": "babel-eslint",
-    "env": {
-        "browser": true
-    },
-    "extends": "@endouble.com/eslint-config-endouble"
-}
-```
-
-### Simple setup
+#### 2.1. Simple setup
 > For vanilla Javascript code
 
-#### 1. Installing
-Make sure you have Node (>=6) installed
-
-```bash
-npm install eslint eslint-plugin-import @endouble.com/eslint-config-endouble --save-dev
-# or
-yarn add --dev eslint eslint-plugin-import @endouble.com/eslint-config-endouble
-```
-
-#### 2. Using
-Create an `.eslintrc.json` file at the root of your project and add the following configuration:
-
 ```json
 {
     "extends": "@endouble.com/eslint-config-endouble"
 }
 ```
 
-##### Extra configuration
+#### 2.2. React setup
+> For React based apps
+
+```json
+{
+    "extends": "@endouble.com/eslint-config-endouble/react"
+}
+```
+
+### 3. Extra configuration
 Add to `package.json` a script to lint your desired files:
 
 ```json
@@ -69,13 +51,19 @@ rules.
 
 | rule | setting |
 |------|---------|
-| indent | 4 spaces |
+| indent | 4 spaces, { SwitchCase: 1 } |
 | max-len | 120 characters |
+| react/jsx-indent | 4 spaces |
+| react/jsx-indent-props | 4 spaces |
+| react/jsx-filename-extension | off |
+| jsx-a11y/href-no-hash | off |
+| jsx-a11y/label-has-for | error, { allowChildren: true } |
+| jsx-a11y/anchor-is-valid | error, { specialLink: ['to'] } |
+| import/no-extraneous-dependencies | error, { devDependencies: true } |
+| import/no-unresolved | error, { commonjs: true, amd: true } |
 
 ## Tests
 ```bash
-npm test
-# or
 yarn test
 ```
 
