@@ -1,8 +1,8 @@
 {
   "name": "@endouble.com/eslint-config-endouble",
-  "version": "0.7.0",
+  "version": "1.0.0",
   "description": "Endouble's Javascript ESLint configuration",
-  "main": "./config/index.js",
+  "main": "./index.js",
   "repository": {
     "url": "https://github.com/Endouble/eslint-config",
     "type": "git"
@@ -13,6 +13,7 @@
   "author": "Renan Couto <renancouto@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "babel-eslint": "^8.0.1",
     "eslint": "^4.9.0",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-plugin-import": "^2.8.0",

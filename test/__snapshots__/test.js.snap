@@ -33,6 +33,7 @@ Object {
     "airbnb",
     "@endouble.com/eslint-config-endouble",
   ],
+  "parser": "babel-eslint",
   "plugins": Array [
     "react",
   ],

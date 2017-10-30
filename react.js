@@ -10,6 +10,7 @@ module.exports = {
         'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
         'import/no-unresolved': ['error', { commonjs: true, amd: true }],
     },
+    parser: 'babel-eslint',
     plugins: [
         'react',
     ],
