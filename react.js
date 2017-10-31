@@ -5,10 +5,19 @@ module.exports = {
         'react/jsx-indent-props': ['error', 4],
         'react/jsx-filename-extension': 'off',
         'jsx-a11y/href-no-hash': 'off',
-        'jsx-a11y/label-has-for': ['error', { allowChildren: true }],
-        'jsx-a11y/anchor-is-valid': ['error', { specialLink: ['to'] }],
-        'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
-        'import/no-unresolved': ['error', { commonjs: true, amd: true }],
+        'jsx-a11y/label-has-for': ['error', {
+            allowChildren: true,
+        }],
+        'jsx-a11y/anchor-is-valid': ['error', {
+            specialLink: ['to'],
+        }],
+        'import/no-extraneous-dependencies': ['error', {
+            devDependencies: true,
+        }],
+        'import/no-unresolved': ['error', {
+            commonjs: true,
+            amd: true,
+        }],
     },
     parser: 'babel-eslint',
     plugins: [

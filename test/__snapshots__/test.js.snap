@@ -23,6 +23,12 @@ Object {
         "ignoreUrls": true,
       },
     ],
+    "object-curly-newline": Array [
+      "error",
+      Object {
+        "consistent": true,
+      },
+    ],
   },
 }
 `;

@@ -9,5 +9,8 @@ module.exports = {
             ignoreStrings: true,
             ignoreTemplateLiterals: true,
         }],
+        'object-curly-newline': ['error', {
+            consistent: true,
+        }],
     },
 };
