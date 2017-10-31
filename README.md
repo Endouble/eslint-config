@@ -49,18 +49,19 @@ rules.
 ### Custom rules
 > This rules overwrite the ones inherited from AirBnB Styleguide
 
-| rule | setting |
+| setup | rule | setting |
 |------|---------|
-| indent | 4 spaces, { SwitchCase: 1 } |
-| max-len | 120 characters |
-| react/jsx-indent | 4 spaces |
-| react/jsx-indent-props | 4 spaces |
-| react/jsx-filename-extension | off |
-| jsx-a11y/href-no-hash | off |
-| jsx-a11y/label-has-for | error, { allowChildren: true } |
-| jsx-a11y/anchor-is-valid | error, { specialLink: ['to'] } |
-| import/no-extraneous-dependencies | error, { devDependencies: true } |
-| import/no-unresolved | error, { commonjs: true, amd: true } |
+| all | indent | 4 spaces, { SwitchCase: 1 } |
+| all | max-len | 120 characters |
+| all | object-curly-newline | error, { consistent: true } |
+| react | react/jsx-indent | 4 spaces |
+| react | react/jsx-indent-props | 4 spaces |
+| react | react/jsx-filename-extension | off |
+| react | jsx-a11y/href-no-hash | off |
+| react | jsx-a11y/label-has-for | error, { allowChildren: true } |
+| react | jsx-a11y/anchor-is-valid | error, { specialLink: ['to'] } |
+| react | import/no-extraneous-dependencies | error, { devDependencies: true } |
+| react | import/no-unresolved | error, { commonjs: true, amd: true } |
 
 ## Tests
 ```bash
