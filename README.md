@@ -62,7 +62,6 @@ rules.
 | react | jsx-a11y/anchor-is-valid | error, { specialLink: ['to'] } |
 | react | import/no-extraneous-dependencies | error, { devDependencies: true } |
 | react | import/no-unresolved | error, { commonjs: true, amd: true } |
-| react | import/no-unresolved | error, { commonjs: true, amd: true } |
 
 ## Tests
 ```bash
