@@ -50,7 +50,7 @@ rules.
 > This rules overwrite the ones inherited from AirBnB Styleguide
 
 | setup | rule | setting |
-|------|---------|
+|-------|------|---------|
 | all | indent | 4 spaces, { SwitchCase: 1 } |
 | all | max-len | 120 characters |
 | all | object-curly-newline | error, { consistent: true } |
