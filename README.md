@@ -57,6 +57,8 @@ rules.
 | react | react/jsx-indent | 4 spaces |
 | react | react/jsx-indent-props | 4 spaces |
 | react | react/jsx-filename-extension | off |
+| react | react-hooks/rules-of-hooks | error |
+| react | react-hooks/exhaustive-deps | warn |
 | react | jsx-a11y/href-no-hash | off |
 | react | jsx-a11y/label-has-for | error, { allowChildren: true } |
 | react | jsx-a11y/anchor-is-valid | error, { specialLink: ['to'] } |

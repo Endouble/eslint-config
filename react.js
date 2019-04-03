@@ -4,6 +4,8 @@ module.exports = {
         'react/jsx-indent': ['error', 4],
         'react/jsx-indent-props': ['error', 4],
         'react/jsx-filename-extension': 'off',
+        'react-hooks/rules-of-hooks': 'error',
+        'react-hooks/exhaustive-deps': 'warn',
         'jsx-a11y/href-no-hash': 'off',
         'jsx-a11y/label-has-for': ['error', {
             allowChildren: true,
@@ -22,5 +24,6 @@ module.exports = {
     parser: 'babel-eslint',
     plugins: [
         'react',
+        'react-hooks',
     ],
 };
