@@ -10,7 +10,7 @@
   "scripts": {
     "test": "eslint *.js test/*.js && jest"
   },
-  "author": "Renan Couto <renancouto@gmail.com>",
+  "author": "Endouble.com",
   "license": "MIT",
   "dependencies": {
     "babel-eslint": "^9.0.0",
