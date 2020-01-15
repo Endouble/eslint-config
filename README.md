@@ -31,6 +31,15 @@ Create an `.eslintrc.json` file at the root of your project and add the followin
 }
 ```
 
+#### 2.3. CSB setup
+> For CSB websites
+
+```json
+{
+    "extends": "@endouble.com/eslint-config-endouble/csb"
+}
+```
+
 ### 3. Extra configuration
 Add to `package.json` a script to lint your desired files:
 
